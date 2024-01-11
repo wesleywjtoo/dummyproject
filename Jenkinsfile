@@ -11,7 +11,7 @@ pipeline{
        GroupId = readMavenPom().getGroupId()
     }
     stages{
-        stage('Build'){
+        stage('Builds'){
             steps{
                 sh 'mvn clean install package'
             }
