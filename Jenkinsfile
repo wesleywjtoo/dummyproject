@@ -13,7 +13,10 @@ pipeline{
     stages{
         stage('Builds'){
             steps{
-                echo "Current Build No: ${env.BUILD_NUMBER}"
+                script{
+                    def bNumber = env.BUILD_NUMBER
+                    echo "Current Build No: ${bNumber}"
+                }
                 sh 'mvn clean install package'
             }
         }
