@@ -10,8 +10,8 @@ public class Something{
     }
 
     public void checkerStr(String str){
-        String str = null;
-        if(str.equals("Hi")){
+        String rs = null;
+        if(rs.equals("Hi")){
             pt("String is Hi");
         }
     }
